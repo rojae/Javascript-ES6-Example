@@ -1,3 +1,5 @@
+'use strict'
+
 // Object.js
 // object = {key : value};
 const name = 'rojae';
@@ -76,14 +78,14 @@ console.log('address' in rojae);
 // 6. for ... in vs for .. of
 // for (key in obj)
 console.clear();
-for (key in rojae){
+for (let key in rojae){
     console.log(key);
 }
 
 // for (value of iterable)
 const array = [1,2,3,4,5];
 
-for(value of array){
+for(let value of array){
     console.log(value);
 }
 
@@ -96,7 +98,7 @@ console.log(user);
 
 // old way
 const user3 = {};
-for (key in user){
+for (let key in user){
     user3[key] = user[key];
 }
 console.clear();
